@@ -8,7 +8,20 @@
 
 // Note: for this kata y isn't considered a vowel.
 
-function disemvowel(str){
-    const noVowel = str.replace(/[aeiou]/gi,"");
-    return noVowel
+// function disemvowel(str){
+//     const noVowel = str.replace(/[aeiou]/gi,"");
+//     return noVowel
+// }
+
+
+
+// Create a function that takes in an array of numbers
+//Alert the sum of the second lowest and the second highest number
+
+
+function secondlowestAndSecHighest(arr){
+    let sorted = arr.sort((a,b) => a-b)
+    let sum = sorted[1] + sorted[sorted.length-2]
+    alert(sum)
 }
+secondlowestAndSecHighest([23,43,12,65,78,90])
